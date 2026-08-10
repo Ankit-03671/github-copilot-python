@@ -1,60 +1,75 @@
-# Refactor a Sudoku Game written in Python Flask
+# Project Overview
 
-Use this simple Sudoku game as a starting point to practice your skills with GitHub Copilot. The goal is to refactor the code to use modern technologies, while also adding new features and improving the overall user experience.
+Flask-based Sudoku web application.
+Developed using Python, HTML, CSS, and JavaScript.
+Improved and refactored with GitHub Copilot.
+Focuses on better structure, usability, testing, and responsive design.
 
-## Getting Started
+# Main Features
+Sudoku puzzle generation.
+Easy, Medium, and Hard difficulty levels.
+Unique solvable Sudoku puzzles.
+Locked prefilled cells.
+Hint functionality.
+Check Solution functionality.
+Incorrect-cell highlighting.
+Game timer.
+Congratulations message after completion.
+Player name entry.
+Top 10 leaderboard.
+LocalStorage for saving scores.
+Tracks player name, time, difficulty, and hints.
+Light Mode and Dark Mode.
+Responsive desktop and mobile interface.
+Technologies Used
+Backend: Python, Flask
+Frontend: HTML5, CSS3, JavaScript
+Testing: pytest
+Storage: Browser LocalStorage
+Development Assistant: GitHub Copilot
 
-Follow these instructions to get a copy of the project up and running on your local machine.
+# Project Structure
+starter/app.py – Flask application and routes.
+starter/sudoku_logic.py – Sudoku generation and validation.
+starter/templates/index.html – Web page structure.
+starter/static/main.js – Game interaction and functionality.
+starter/static/styles.css – UI styling and responsive design.
+starter/tests/ – Automated tests.
+instruction.md – Project-specific Copilot instructions.
+Screenshots/ – Project evidence and screenshots.
 
-### Dependencies
+# How to Run
+Open the project in VS Code.
+Navigate to the starter folder.
+Create/activate the Python virtual environment.
+Install dependencies using requirements.txt.
+Run python app.py.
+Open http://127.0.0.1:5000/ in a browser.
+Testing
+Uses pytest for automated testing.
+Tests Sudoku board generation.
+Tests Sudoku validation.
+Tests puzzle generation.
+Tests difficulty functionality.
 
-```
-- Modern web browser (Chrome, Firefox, Edge, etc.)
-- Python 3
-```
+Run with:
 
-### Installation
+python -m pytest
+GitHub Copilot Usage
+Used Copilot to assist with code refactoring.
+Used Copilot for Sudoku logic improvements.
+Used Copilot to set up testing.
+Used Copilot for JavaScript functionality.
+Used Copilot for responsive CSS.
+Used Copilot for leaderboard and LocalStorage functionality.
+Copilot suggestions were reviewed before being accepted.
+Suggestions that did not meet project requirements were modified or rejected.
 
-1. Fork this repository to your GitHub account. (You can use the "Fork" button on the top right corner of the repository page.)
-
-2. Clone your forked repository to your local machine.
-
-3. Open a terminal window and navigate to the "github-copilot-python/starter" directory.
-
-4. Create a Python virtual environment and activate it (optional but highly recommended).
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-5. Install required Python packages.
-
-```bash
-pip install -r requirements.txt
-```
-
-6. Run the Flask app.
-
-```bash
-python app.py
-```
-
-7. Open http://127.0.0.1:5000 in your browser.
-
-## Project Instructions
-
-Use GitHub Copilot to refactor the code for this game to add more advanced features. The goal is to create a more modern and maintainable codebase and add additional functionality to the final product. You can use any combination of code completion and chat features, like Ask, Edit, or Agent modes.
-
-- Errors should be handled gracefully with appropriate messages to the user.
-- Implement a Sudoku board generator that creates a valid Sudoku puzzle with a unique solution.
-- Add a timer to track how long it takes to solve the puzzle.
-- Implement a solution checker that verifies if the user's solution is correct using event delegation.
-- Add a difficulty selector to allow users to choose between easy, medium, and hard puzzles.
-- Add a hint feature that provides clues for the user that are noted with unique colors.
-- Add a check puzzle button that checks the current state of the board against the solution.
-- User should get immediate feedback on their input, such as highlighting invalid entries.
-- Top 10 scores should be saved in local storage and displayed on the page with the user's name, time taken, hints used, and difficulty level.
-- The game should be responsive and work well on both desktop and mobile devices.
-- UI colors should be visually appealing and accessible.
-- Completed and correct puzzles should display a congratulatory message with the time taken and hints used and ask for the user's name for Top 10 times.
+# Screenshots
+Testing framework setup.
+Sudoku unique-solution functionality.
+Difficulty levels.
+Top 10 leaderboard and LocalStorage.
+3×3 grid styling.
+Final running application.
+Copilot prompt/suggestion evidence.
